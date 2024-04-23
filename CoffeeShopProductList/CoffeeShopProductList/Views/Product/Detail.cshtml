@@ -1,0 +1,26 @@
+﻿@model ProductViewModel;
+
+<h2>Product Details</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>@Model.ProductName</td>
+                <td>@Model.Description</td>
+                <td>$@Model.Price</td>
+                <td>@Model.Category</td>
+            </tr>
+    </tbody>
+</table>
+
+<p>
+    @Html.ActionLink("Return to Product List", "Index", "Product")
+</p>
